@@ -4,33 +4,55 @@
     <meta charset="UTF-8">
     <meta name="description" content="This is reserch about sunset, it includes videos and images of amazing sunset!">
     <meta name="author" content=" Hikmat Yusuf">
-    <meta name="keywords"Home Page">
+    <meta name="keywords"Home Page>
 
     <title> Home page </title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="StyleSheet1.css">
+    <script src="index_Script.js" async></script>
+    <script src="img_script.js" async></script>
+    <script src="event_script.js" defer></script>
+    <script src="More_Script.js" defer></script>
 </head>
 <body>
     <div>
-        <nav>
+        <nav id="menu_nav">
             <ul>
                 <li><a class="active" href="Index.html">Home</a></li>
                 <li><a href="Videos.html">Videos</a></li>
                 <li><a href="Image.html">Image</a></li>
                 <li><a href="More.html">More</a></li>
+               
             </ul>
         </nav>
     </div>
+   	
     <br />
-    <div class="image1"><img src="Anatomy_of_a_Sunset-2.jpg" width="1200" height="450"></div>
-    <h2 class="container">The full cycle of a sunset on the High Plains of the Mojave Desert</h2><br />
-    <p>
-        Sunset, also known as sundown, is the daily disappearance of the Sun below the horizon due to Earth's rotation. As viewed from the Equator, the equinox Sun sets exactly due west in both Spring and Autumn. As viewed from the middle latitudes, the local summer Sun sets to the northwest for the Northern Hemisphere, but to the southwest for the Southern Hemisphere.
+    <div id='currentdate'></div><br/>
+    
+    <div>
+        <img onmouseover="biggerImg(this)" onmouseout="normalImg(this)" border="0"src="images/Anatomy_of_a_Sunset-2.jpg"alt="sundown" width="64" height="64">
+    </div>
+    <div class="container">
+		<h2 id="label">Login</h2>
+        
+		<form id="form" action="/Image.html" onsubmit= "return validated()" method="POST">
+         email <input type="text" name = "Email">
+          passward <input type="password" name="password">
+             <input type="submit" value="Submit">
+				
+		</form> 
+	</div>		
+    <div id="box"></div>
+    <h3 id="container">The full cycle of a sunset on the High Plains of the Mojave Desert</h3><br />
+    <p>  Sunset, also known as sundown, is the daily disappearance of the Sun below the horizon due to Earth's rotation. As viewed from the Equator, the equinox Sun sets exactly due west in both Spring and Autumn. As viewed from the middle latitudes, the local summer Sun sets to the northwest for the Northern Hemisphere, but to the southwest for the Southern Hemisphere.
         The time of sunset is defined in astronomy as the moment when the upper limb of the Sun disappears below the
         horizon. Near the horizon, atmospheric refraction causes sunlight rays to be distorted to such an extent that
         geometrically the solar disk is already about one diameter below the horizon when a sunset is observed.
+ </p>
+ 
 
-    </p>
+ 
     <br />
     <br />
     <hr class="mystyle">

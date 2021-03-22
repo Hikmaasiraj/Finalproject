@@ -8,6 +8,7 @@
     <title>Sunset image Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="StyleSheet1.css">
+    <script src="img_script.js" async></script>
 </head>
 <body>
 
@@ -20,35 +21,53 @@
             <li><a href="More.html">More</a></li>
         </ul>
     </nav>
+    <div id="radio">
+    <input type="radio" name="type" value= "images1"onclick="showImg();"/> 1 Red_sunset_1.jpg<br/>
+    <input type="radio" name="type" value= "images2" onclick="showImg();"/> 2 Red_sunset_2.jpg<br/>
+    <input type="radio" name="type" value= "images3" onclick="showImg();"/> 3 Red_sunset_3.jpg<br/>
+   
+</div>
+
+
+
     <br />
-   
+   <select id="Select" onchange="navigate();">
+       <option value="Home">Home</option>
+       <option value="videos">videos</option>
+       <option value="Image">Image</option>
+       <option value="More">More</option>
+    </select>
+</br>  
+        
+
         <h1 class="container">Beautiful sunset image gallery</h1>
-   
-
-        <div class="container">
-
-            <div class="gallery"><img src="Red_sunset.jpg">A red sunset near Swifts Creek, Australia</div>
+            <div class="gallery">
+            <img src="images/Red_sunset_1.jpg" >
+                A red sunset near Swifts Creek, Australia</div>
             
             <div class=" gallery">
-                <img src="atsunset.jpg">Illuminated downdraft wind shear clouds in the eastern sky at sunset,
+                <img  src="images/Red_sunset_2.jpg">
+                Illuminated downdraft wind shear clouds in the eastern sky at sunset,
                 mimic aurora borealis in the Mojave Desert
             </div>
             
-            <div class="gallery"> <img src="SunsetinBrela.jpg">Sunset in Brela, Croatia</div>
+            <div class="gallery">
+                 <img  src="images/Red_sunset_3.jpg" >
+                 Sunset in Brela, Croatia</div>
             
-            <div class="gallery"><img src="DuringaSunsetinPayallar.jpg">Silhouettes of fishermen during a sunset in Payallar, Alanya</div>
+            <div class="gallery">
+                <img  src="images/Red_sunset_4.jpg" >Silhouettes of fishermen during a sunset in Payallar, Alanya</div>
             
-            <div class="gallery"><img src="Namibdesertsunset.jpg">Sunset in the Namib desert</div>
+            <div class="gallery">
+                <img src="images/Red_sunset_5.jpg" >Sunset in the Namib desert</div>
             
-            <div class="gallery"><img src="Majestic_Twilight.jpg">Evening twilight in Joshua Tree, California, 
+            <div class="gallery">
+                <img src="images/Red_sunset_6.jpg" >Evening twilight in Joshua Tree, California, 
             displaying the separation of yellow colors in the direction from the Sun below the horizon to 
             the observer, and the blue components scattered from the surrounding sky</div>
+     
 
-
-        
-        </div>
-
-
+<br/>
             <footer class="footerwrapper">
                 <p id="copyright">
                     The Text content of this site was Legally borrowed from
